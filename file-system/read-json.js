@@ -7,4 +7,6 @@ const fileContent = fs.readFileSync("./paises.json", "utf-8");
 const parsedData = JSON.parse(fileContent);
 
 // Mostramos la ciudad del primer objeto
-console.log(parsedData[0].city);
+for (let country of parsedData) {
+    console.log(country.city);
+}
