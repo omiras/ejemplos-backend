@@ -1,4 +1,4 @@
-const notasExamenFinal = [1, 10, 7, 8, 5, 5, 5];
+const notasExamenFinal = [10, 7, 3, 5, 5, 5, 5];
 
 // ¿Alguien ha suspendido? Sí / No
 // 1. Le pasamos una función de callback
@@ -11,10 +11,10 @@ function haSuspendido(elem) {
 
 console.log("¿Ha suspendido alguien?", haSuspendidoAlguien);
 
-// array de nombres
-const names = ["Zulema", "Andrii", "Esteban", "Connor", "Eva", "Ricardo"];
+// // array de nombres
+const names = ["Alejandro", "Zulema", "Andrii", "Esteban", "Connor", "Eva", "Ricardo"];
 
-// Dime si en este array hay algún nombre que tenga 7 o más carácteres
+// // Dime si en este array hay algún nombre que tenga 7 o más carácteres
 const nombreLargo = names.some(esNombreLargo);
 
 function esNombreLargo(elem) {
@@ -23,23 +23,23 @@ function esNombreLargo(elem) {
 
 console.log("Hay un nombre con más de 7 carácteres? ", nombreLargo);
 
-// Vale, pero quién es el primer elemento que tiene 7 o más carácteres
+// // Vale, pero quién es el primer elemento que tiene 7 o más carácteres
 const nombreLargoFind = names.find(esNombreLargo);
 console.log("El primer nombre largo encontrado es: ", nombreLargoFind);
 
-// Si lo que te interesa es el índice del arrau
-console.log("Índice del array con el nombre más largo: ", names.findIndex(esNombreLargo));
+// // Si lo que te interesa es el índice del arrau
+ console.log("Índice del array con el nombre más largo: ", names.findIndex(esNombreLargo));
 
-// Movimientos bancarios
+// // Movimientos bancarios
 const movimientos = [200, -100, 1240, -600, 0];
 
-// ¿Ha retirado alguna vez más de 500 euros? Envia un mensaje al móvil del clinte
+// // ¿Ha retirado alguna vez más de 500 euros? Envia un mensaje al móvil del clinte
 const movimientoGrande = movimientos.find(m => m < -500);
 console.log("Hay movimiento grande: ", movimientoGrande);
 
-/**
- * Y cuando es un array de objetos?
- */
+// /**
+//  * Y cuando es un array de objetos?
+//  */
 
 const personas = [
     {
@@ -65,9 +65,9 @@ const personas = [
 ];
 
 
-/**
- * Buscame la persona que vive en sevilla (find), quiero todo el objeto
- */
+// /**
+//  * Buscame la persona que vive en sevilla (find), quiero todo el objeto
+//  */
 
 const personaSevilla = personas.find(p => p.ciudad == "Sevilla");
 
@@ -82,8 +82,8 @@ if (personaCentenaria) {
 }
 
 
-/**
- * Dame todas las personas que tengan más de 25 años
- */
-const personasMayores25 = personas.filter(p => p.edad > 25);
-console.log("Personas mayores de 25: ", personasMayores25);
+// /**
+//  * Dame todas las personas que tengan más de 25 años
+//  */
+// const personasMayores25 = personas.filter(p => p.edad > 25);
+// console.log("Personas mayores de 25: ", personasMayores25);

@@ -1,7 +1,7 @@
-const array1 = ['pepe', 'pepa', 'pepo'];
+const array1 = ['pepe', 'pepa', 'pepo', 'papu'];
 
 for (const element of array1) {
-    console.log(element);
+    console.log(element.toUpperCase());
 }
 
 // Expected output: "a"
@@ -9,20 +9,20 @@ for (const element of array1) {
 // Expected output: "c"
 
 // los string también pueden ser recorridor por un for...of puesto que es también un tipo de dato iterable 
-const iterable = "boo";
+// const iterable = "boo";
 
-for (const value of iterable) {
-    console.log(value);
-}
+// for (const value of iterable) {
+//     console.log(value);
+// }
 
-// for .. in
+// // for .. in
 for (const index in array1) {
     console.log("for..in array: ", index);
     console.log("valor del elemento: ", array1[index]);
     console.log("Es índice par?: ", index % 2 == 0)
 }
 
-// for..in objeto
+// // for..in objeto
 const cientifico = {
     nombre: "Newton",
     campo: "Física",
@@ -33,12 +33,12 @@ for (const propiedad in cientifico) {
     console.log("for...in acceder al valor de la propiedad", cientifico[propiedad])
 }
 
-// obtener todos los valores de un objecto
-const object1 = {
-    a: 'somestring',
-    b: 42,
-    c: false,
-};
+// // obtener todos los valores de un objecto
+// const object1 = {
+//     a: 'somestring',
+//     b: 42,
+//     c: false,
+// };
 
-console.log(Object.values(object1));
-// Expected output: Array ["somestring", 42, false]
+// console.log(Object.values(object1));
+// // Expected output: Array ["somestring", 42, false]
