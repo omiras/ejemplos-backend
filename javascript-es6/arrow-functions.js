@@ -1,8 +1,8 @@
 
-soyNormal();
+console.log(soyNormal());
 
 function soyNormal() {
-    console.log("SOY NORMAL");
+    return "SOY UNA FUNCIÓN NORMAL";
 }
 
 /** Guardar una referencia a una función en una variable */
