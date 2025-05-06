@@ -1,4 +1,4 @@
-const array1 = [3, 10, 4];
+const array1 = [3, 10, 4, 4]; // 3, 4, 10
 array1.sort(compareFunc);
 console.log(array1);
 
@@ -8,7 +8,7 @@ function compareFunc(a, b) {
     }
 
     if (a < b) {
-        return -1; // a debe ir antes que a
+        return -1; // a debe ir antes que b
     }
 
     if (a == b) {
@@ -52,4 +52,4 @@ accommodations.sort((a, b) => {
 
 });
 
-console.log("Sort hoteles: ", accommodations);
+ console.log("Sort hoteles: ", accommodations);
