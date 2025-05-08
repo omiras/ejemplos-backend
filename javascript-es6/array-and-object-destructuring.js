@@ -1,13 +1,33 @@
-let arr = ["John", "Smith", 45]
+let arr = ["John", "Smith", 45];
+
 // destructuring assignment
 // sets firstName = arr[0]
 // and surname = arr[1]
 // No estamos creado un array. los [] a la izquierda del operador de asignación nos indican que estamos usando la desestructuración de arrays
-let [firstName, surname, age] = arr;
+let [firstName, surname, age, magia] = arr;
 
 console.log(firstName); // John
 console.log(surname);  // Smith
 console.log(age); // 45
+console.log(magia); // undefined
+
+let [firstNameOther, surnameOther] = "John Smith".split(' ');
+alert(firstNameOther); // John
+alert(surnameOther);  // Smith
+
+// otro ejemplo
+// second element is not needed
+let [firstNameAnother, , title] = ["Julius", "Caesar", "Consul", "of the Roman Republic"];
+
+console.log( title ); // Consul
+
+// otro ejemplo
+let [name1, name2, ...rest] = ["Julius", "Caesar", "Consul", "of the Roman Republic"];
+
+// rest is an array of items, starting from the 3rd one
+alert(rest[0]); // Consul
+alert(rest[1]); // of the Roman Republic
+alert(rest.length); // 2
 
 // Puedo declarar varias variables a la vez?
 let nombre = "Zulema", edad = 24, peso = 60;
@@ -47,7 +67,7 @@ const reservaAirbnb = {
 
 // DE este objeto me quiero quedar con el id de la reserva, si está confirmada, con todas las preferencias del cliente y su número de vuelo
 
-// const idReserva = reservaAirbnb.idReserva;
+//const idReserva = reservaAirbnb.idReserva;
 // const estaConfirmada = reservaAirbnb.estadoReserva;
 // const preferencias = reservaAirbnb.preferencias;
 // const numVuelo = reservaAirbnb.transporte.numeroVuelo;

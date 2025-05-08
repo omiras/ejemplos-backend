@@ -1,5 +1,5 @@
 // Podemos usar el operador ternario para asignar un valor a un variable en función de la evaluación de otra
-let age = 16;
+let age = 42;
 
 // puedo pasar a la discoteca si tengo 18 o más años
 // En caso que tenga 18 años o más queremos un string con el valor "Puedes pasar" en caso contrario un string con el valor "Eres menor de edad"
