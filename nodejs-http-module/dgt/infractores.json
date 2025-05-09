@@ -1,0 +1,5 @@
+[
+  { "matricula": "1234ABC", "fecha": "2024-12-01", "cantidad": 200 },
+  { "matricula": "5678XYZ", "fecha": "2025-01-15", "cantidad": 100 },
+  { "matricula": "9876QWE", "fecha": "2025-03-10", "cantidad": 300 }
+]
