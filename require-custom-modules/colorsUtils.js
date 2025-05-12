@@ -19,7 +19,8 @@ function generateRandomRGB() {
 
 const WHITE_COLOR = "#FFFFFF";
 
-module.exports.generateHexColor = generateHexColor;
-module.exports.generateRandomRGB = generateRandomRGB;
-
-module.exports.WHITE_COLOR = WHITE_COLOR;
+module.exports = {
+    generateHexColor,
+    generateRandomRGB,
+    WHITE_COLOR
+}
