@@ -3,7 +3,7 @@
  */
 const colorUtils = require('./colorsUtils.js');
 
-console.log(colorUtils);
+console.log(colorUtils); 
 
 console.log(colorUtils.generateHexColor());
 console.log(colorUtils.generateRandomRGB());
