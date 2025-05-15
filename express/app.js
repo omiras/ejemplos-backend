@@ -14,6 +14,11 @@ app.get('/', (req, res) => {
   res.sendFile(filePath);
 });
 
+app.get('/search', (req, res)=>{
+  console.log("Petición recibida");
+  res.send(req.query);
+});
+
 app.get('/about', (req, res)=> {
  const filePath = path.join(__dirname, 'views', 'about.html');
   res.sendFile(filePath);
