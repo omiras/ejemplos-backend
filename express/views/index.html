@@ -13,10 +13,30 @@
         <ul><a href="/about">About Us</a></ul>
     </nav>
     <h1>Hola Mundo</h1>
-      <form action="/search" method="get">
+    <!-- método GET -->  
+    <form action="/search" method="get">
             <label for="q">Concepto a buscar</label>
             <input type="text" name="q" id="q">
             <input type="submit" value="Buscar">
-        </form>
+      </form>
+      
+     <h2>Formulario registro curso IronHack</h2>
+     <form action="/register-student" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Za-z]" title="Introduce un DNI válido (8 números y una letra)" required>
+        <br>
+
+        <label for="iban">IBAN:</label>
+        <input type="text" id="iban" name="iban"  required>
+        <br>
+
+        <input type="submit" value="Registrarse">
+     </form>
+    
+
 </body>
 </html>
