@@ -30,6 +30,11 @@ app.get('/', (req, res) => {
     }); // sabe que tiene que ir a la carpeta "views" porque es la carpeta por defecto de las vistas (se puede cambiar).  
 });
 
+// Vista de añadir nuevo posts
+app.get("/new", (req, res)=> {
+    res.render('new-post.ejs');
+});
+
 
 
 // Iniciar el servidor
