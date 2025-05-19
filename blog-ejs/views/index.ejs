@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+</head>
+<body>
+    <h1>My Personal blog: <%= title %> </h1>
+    <section>
+        <!-- Crear tantos H2 como posts tengo en mi "base de datos"-->
+
+        <% posts.forEach(function(p) { %>
+            <h2><%= p.title  %></h2>
+        <% }) %>
+    </section>
+</body>
+</html>

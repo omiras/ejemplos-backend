@@ -1,0 +1,20 @@
+{
+  "name": "blog-ejs",
+  "version": "1.0.0",
+  "description": "1. Dividir el proyecto a resolver en pequeñas tareas\r 2. Haz tareas que den algun tipo de funcionalidad válida y que aporte valor al usuario final\r 3. Empezamos el proyecto creado un array de posts en una variable que vamos a mostrar en /home\r 4. Si hago funcionalidad pequeñitas me puedo dar cuenta antes de si voy por buen camino (y los clientes pueden ir viendo progresos y dar feedback temprano)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
