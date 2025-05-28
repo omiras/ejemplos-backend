@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fitxa del ciutadà</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="header-mossos">
+    <img src="/senyera.svg" alt="Bandera catalana">
+    <h1>Mossos d'Esquadra</h1>
+  </div>
+  <div class="citizen-card-mossos">
+    <h2>Fitxa del ciutadà</h2>
+    <p><strong>DNI:</strong> <%= citizen.idCard %></p>
+    <p><strong>Nom complet:</strong> <%= citizen.fullname %></p>
+    <p><strong>Adreça:</strong> <%= citizen.address %></p>
+    <img src="<%= citizen.photo %>" alt="Foto del ciutadà" />
+    <div style="margin-top:1.5rem;">
+      <a href="/mossos-ejs" class="btn-mossos">Tornar</a>
+    </div>
+  </div>
+</body>
+</html>

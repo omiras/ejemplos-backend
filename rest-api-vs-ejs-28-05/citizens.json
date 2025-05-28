@@ -1,0 +1,62 @@
+[
+  {
+    "idCard": "1234567U",
+    "fullname": "Laura Serra",
+    "address": "Carrer de la Marina 42, Barcelona",
+    "photo": "https://randomuser.me/api/portraits/women/45.jpg"
+  },
+  {
+    "idCard": "9876543X",
+    "fullname": "Marc Puig",
+    "address": "Carrer Major 12, Girona",
+    "photo": "https://randomuser.me/api/portraits/men/12.jpg"
+  },
+  {
+    "idCard": "4567890A",
+    "fullname": "Júlia Soler",
+    "address": "Avinguda Diagonal 101, Barcelona",
+    "photo": "https://randomuser.me/api/portraits/women/21.jpg"
+  },
+  {
+    "idCard": "1122334B",
+    "fullname": "Pau Riera",
+    "address": "Carrer del Bisbe 33, Tarragona",
+    "photo": "https://randomuser.me/api/portraits/men/52.jpg"
+  },
+  {
+    "idCard": "9988776M",
+    "fullname": "Núria Ferrer",
+    "address": "Passeig de Gràcia 22, Barcelona",
+    "photo": "https://randomuser.me/api/portraits/women/32.jpg"
+  },
+  {
+    "idCard": "6655443Z",
+    "fullname": "Arnau Vidal",
+    "address": "Carrer Nou 5, Lleida",
+    "photo": "https://randomuser.me/api/portraits/men/18.jpg"
+  },
+  {
+    "idCard": "4433221N",
+    "fullname": "Marta Comas",
+    "address": "Rambla del Raval 88, Barcelona",
+    "photo": "https://randomuser.me/api/portraits/women/63.jpg"
+  },
+  {
+    "idCard": "2345678Q",
+    "fullname": "Roger Martí",
+    "address": "Carrer d'Aragó 134, Barcelona",
+    "photo": "https://randomuser.me/api/portraits/men/26.jpg"
+  },
+  {
+    "idCard": "8765432Y",
+    "fullname": "Carla Mas",
+    "address": "Travessera de Gràcia 201, Barcelona",
+    "photo": "https://randomuser.me/api/portraits/women/77.jpg"
+  },
+  {
+    "idCard": "3210987T",
+    "fullname": "Joan Esteve",
+    "address": "Carrer de l'Argenteria 8, Girona",
+    "photo": "https://randomuser.me/api/portraits/men/30.jpg"
+  }
+]

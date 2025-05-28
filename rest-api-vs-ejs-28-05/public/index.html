@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <title>Consulta REST API</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Consulta per DNI (versió API)</h1>
+  <input type="text" id="dniInput" placeholder="Introdueix el DNI" />
+  <button onclick="buscar()">Buscar</button>
+  <div id="resultat"></div>
+
+  <script>
+    async function buscar() {
+      // obtengo el valor que ha puesto el usuario en el formulario
+      const dni = document.getElementById('dniInput').value;
+      
+      // usamos el método fetch para hacer un GET al endpoint /api/citizen y le pasamos en la query string el valor del dni
+      const res = await fetch(`/api/citizen?dni=${dni}`);
+
+      // obtener el contenedor donde va a ir la info del ciudadano
+      const container = document.getElementById('resultat');
+
+      // Limpiamos ese conteendor por si tenía información previo
+      container.innerHTML = '';
+
+      // res.ok es variable boleana (true/false) que nos indica si la petición GET ha ido bien o no
+      if (res.ok) {
+        // aqui procesamos el JSON y lo transformamos en estructura de datos que pueda ser procesada por JavaScript (lo transformamos en este caos en un objeto con la info del ciudadano)
+        const data = await res.json();
+
+        // Relleno el HTML con nuevos nodos con la información del ciudadano
+        container.innerHTML = `
+          <p><strong>Nom:</strong> ${data.fullname}</p>
+          <p><strong>Adreça:</strong> ${data.address}</p>
+          <img src="${data.photo}" alt="Foto">
+        `;
+      } else {
+        // si el servidor nos devuelve un error 404 (recurso no encontrado) actualizamos el DOM
+        container.textContent = 'Ciutadà no trobat';
+      }
+    }
+  </script>
+</body>
+</html>
