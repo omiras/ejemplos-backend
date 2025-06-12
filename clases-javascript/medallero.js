@@ -39,3 +39,6 @@ const medalleroJapon = {
         this.total = this.total + 1;
     }
 }
+
+console.log(medalleroJapon);
+console.log(medalleroJapon.constructor.name); // Object -> significa que es un objeto plano (que no viene de una clase)

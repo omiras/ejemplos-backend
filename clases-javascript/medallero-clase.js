@@ -22,3 +22,5 @@ const medalleroChina = new Medallero("China");
 medalleroChina.ganarMedalla();
 console.log(medalleroChina);
 console.log(medalleroEspaña);
+console.log(medalleroChina instanceof Medallero);
+console.log(medalleroChina.constructor.name); // Obtiene el tipo de este objeto (Medallero)
