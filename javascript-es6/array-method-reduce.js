@@ -29,3 +29,9 @@ let movimientos = [{
 let totalReduceObjetos = movimientos.reduce((acumulado, sigMovimiento) => acumulado + sigMovimiento.valor, 0);
 
 console.log(totalReduceObjetos);
+
+function generarAcronimo(arr) {
+    return arr.reduce((accum, nextValue)=> accum + nextValue.at(0), "").toUpperCase();
+}
+
+console.log("generar acronimo_: ", generarAcronimo(["rojo", "verde", "azul"]));

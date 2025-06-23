@@ -40,27 +40,17 @@ async function main() {
     // Tenemos una clase que se llama 'Kitten' que nos va permitir crear objetos siguienda el patrón de kittySchema
 
     // Mongoose nos provee de un método de la clase que nos permite hacer un 'find' para buscar documentos
-     const document = await Kitten.findById("685050c299a9cceb369c70a3")
+    const document = await Kitten.findById("685054c5e21f875bf4ba2f9d");
 
-     console.log(document)
+    // actualizar un documento
+    document.furColor = "White";
 
-    // console.log(documents);
+    await document.save();
+    
 
-    // //Crear una instancia de la clase 'Kitten'
-    // const cat = new Kitten({
-    //     name: "Sardinas",
-    //     birthDate: new Date("2010-07-01"),
-    //     furColor: "Black"
-    // });
+    console.log(document);
 
-    // // método para poder guardar este documento en la base de datos
-    // try {
-    //     await cat.save();
-    //     console.log("Gato insertado correctamente");
-
-    // } catch (err) {
-    //     console.log(err.message);
-    // }
+   
 
 }
 
